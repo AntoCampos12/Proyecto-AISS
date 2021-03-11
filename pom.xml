@@ -64,9 +64,14 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  	<sonar.projectKey>AntoCampos12_Proyecto-AISS</sonar.projectKey>
-  	<sonar.organization>antocampos12</sonar.organization>
-  	<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <main.basedir>${project.basedir}</main.basedir>
+        <sonar.projectKey>AntoCampos12_Proyecto-AISS</sonar.projectKey>
+        <sonar.organization>antocampos12</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+        <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
+        <sonar.language>java</sonar.language>
+        <jacoco.version>0.8.6</jacoco.version>
+        <test.jacoco.includeNoLocationClasses>true</test.jacoco.includeNoLocationClasses>
     </properties>
 
     <dependencyManagement>
